@@ -1,0 +1,25 @@
+// RECHARTS OVERWRITE
+
+.recharts-layer.recharts-cartesian-axis {
+    font-weight: 600;
+}
+
+.recharts-cartesian-grid {
+  opacity: 0.5
+}
+
+.recharts-legend-wrapper {
+  padding-bottom: $s-size;
+}
+
+.recharts-rectangle.recharts-tooltip-cursor {
+  opacity: 0.2
+}
+
+.recharts-label {
+  font-weight: 700;
+  font-size: 16px;
+  fill: #4a4a4a;
+  fill: #666;
+  transform: translate(0, 15px);
+}

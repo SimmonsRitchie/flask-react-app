@@ -1,0 +1,20 @@
+/* this determines what gets show or hidden depending on 
+what size screen you're viewing it on. */
+
+.hide-for-smaller-than-iphone6 {
+  @media (max-width: $iphone6-breakpoint) {
+    display: none;
+} 
+}
+
+.show-for-mobile {
+    @media (min-width: $mid-breakpoint) {
+        display: none;
+    } 
+}
+
+.show-for-desktop {
+    @media (max-width: $desktop-breakpoint - .01rem) {
+        display: none;
+    }
+}

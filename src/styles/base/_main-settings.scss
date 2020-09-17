@@ -1,0 +1,52 @@
+
+// ----------------------------------------------------------------
+// COLORS
+
+// Sunlight Foundation - base colors
+$background: #EFECEA;
+$background-light-accent: #F5F3F2;
+$background-dark-accent: #E5E2E0;
+$text-main: #635F5D;
+$text-light: #8E8883;  
+$line-white: #FFFFFF;
+$line-grey-accent: #C0C0BB;
+$map-hover: #e5e5e5;
+$off-black1: #363636;
+
+// Sunlight Foundation - 'thing' colors
+$yellow:#E3BA22;
+$orange:  #E6842A;
+$blue: #137B80;
+$purple:#8E6C8A;
+$neutral: #978F80;
+$no-data: #E5E2E0;
+
+// Sunlight foundation - subset of 'thing' colors
+$yellow-sub1: #F2DA57;
+$orange-sub1:  #F6B656;
+$blue-sub1: #42A5B3;
+$purple-sub1:#B396AD;
+$neutral-sub1: #C1BAA9;
+
+// Sunlight Foundation - special colors
+$republican: #9A3E25;
+$republican-subset: #B37055;
+$democrat: #156b90;
+$democrat-subset: #688BAB;
+
+// ----------------------------------------------------------------
+// SPACING
+
+$xs-size: 0.5rem;
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$xm-size: 2.3rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$lg-screen-breakpoint: 900px;
+$desktop-breakpoint: 45rem;
+$upper-breakpoint: 700px;
+$mid-breakpoint: 550px;
+$iphone5-breakpoint: 321px;
+$iphone6-breakpoint: 374px;
+$tiny-breakpoint: 300px;

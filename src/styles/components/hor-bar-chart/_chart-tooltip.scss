@@ -1,0 +1,15 @@
+.chart-tooltip__value-container {
+  // font-weight: bold;
+
+  &.abbrev-numbers {
+    font-weight: normal;
+    text-transform: uppercase;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+.chart-tooltip__value {
+  font-weight: 700;
+}
