@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Footer = ({ byline, outlet, outletUrl, source, footnote }) => {
-  const outletJsx = <span />;
-
   return (
     <div>
       <div className="footer__container">
@@ -37,7 +35,7 @@ Footer.propTypes = {
   byline: PropTypes.string.isRequired,
   outlet: PropTypes.string.isRequired,
   outletUrl: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired,
+  source: PropTypes.string,
   footnote: PropTypes.string,
 };
 

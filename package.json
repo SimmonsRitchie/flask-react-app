@@ -1,14 +1,14 @@
 {
-  "name": "boilerplate-spotlight-react-widget-2",
+  "name": "flask-react",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
     "build": "parcel build src/index.html",
-    "build:prod": "parcel build src/index.html --public-url https://interactives.data.spotlightpa.org/2020/boilerplate-spotlight-react-widget-2/",
+    "build:prod": "parcel build src/index.html --public-url https://interactives.data.spotlightpa.org/2020/flask-react/",
     "clean": "find dist -mindepth 1 -delete || mkdir dist",
-    "deploy": "npm run clean && npm run build:prod && s3deploy -source dist -bucket interactives.data.spotlightpa.org -path 2020/boilerplate-spotlight-react-widget-2/ -region us-east-2  -distribution-id EFR0HZ7VA3Q92 -public-access",
+    "deploy": "npm run clean && npm run build:prod && s3deploy -source dist -bucket interactives.data.spotlightpa.org -path 2020/flask-react/ -region us-east-2  -distribution-id EFR0HZ7VA3Q92 -public-access",
     "start": "parcel src/index.html",
     "heroku-postbuild": "npm run build"
   },
