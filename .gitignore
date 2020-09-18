@@ -5,3 +5,4 @@ colors.md
 .cache
 dist
 venv/
+__pycache__
