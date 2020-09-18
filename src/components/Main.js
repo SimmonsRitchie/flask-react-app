@@ -24,7 +24,7 @@ class Main extends React.Component {
     return (
       <div className="container__outer">
         <div className="container__inner">
-          <Header headline="Flask React app!" />
+          <Header headline="Experimental app" />
           <Body data={data} />
           <Footer
             byline="DSR"

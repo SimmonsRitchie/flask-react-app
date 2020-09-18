@@ -4,7 +4,6 @@
   "main": "index.js",
   "author": "Spotlight PA",
   "license": "MIT",
-  "proxy": "http://127.0.0.1:5000",
   "scripts": {
     "build": "parcel build src/index.html",
     "build:prod": "parcel build src/index.html --public-url https://interactives.data.spotlightpa.org/2020/flask-react/",
