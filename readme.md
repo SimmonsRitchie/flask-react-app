@@ -20,13 +20,14 @@ Now enter the following command:
 
 ### Run frontend
 
+It's preferable to develop using Parcel's dev server, rather than Flask's, because Parcel includes hot reloading by default.
+
 To spin up Parcel's dev server with your React frontend, enter:
 
 ```npm run start```
 
 You should be able to view the project at localhost:1234
 
-It's preferable to develop using Parcel's dev server, rather than Flask's, because the former includes hot reloading by default. 
 
 ### Run flask
 
