@@ -35,8 +35,9 @@ To spin up a local Flask server with the latest build of your frontend, enter:
 
 ```npm run flask```
 
+Note: If you've already run this command once you may need to do a hard refresh in order to see changes to your frontend since the prior build.
 
-### Deploy to Heroku
+### Deploy to Heroku - Initial
 
 These instructions assume you have a Heroku account and that you've initialized this project as a new repo.
 
@@ -54,6 +55,8 @@ For your initially deployment, run the following commands from inside your proje
 
 ```git push heroku master```
 
-For subsequent deployments, run:
+### Deploy to Heroku - Subsequent
+
+For subsequent deployments to Heroku, make sure you're on the master branch then run:
 
 ```npm run deploy```
