@@ -5,7 +5,7 @@
   "author": "Spotlight PA",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --no-content-hash",
     "build:prod": "parcel build src/index.html --public-url https://interactives.data.spotlightpa.org/2020/flask-react/",
     "start-api": "venv/bin/flask run --no-debugger",
     "clean": "find dist -mindepth 1 -delete || mkdir dist",

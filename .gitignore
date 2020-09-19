@@ -3,6 +3,5 @@ node_modules/
 .env.development
 colors.md
 .cache
-dist
 venv/
 __pycache__
