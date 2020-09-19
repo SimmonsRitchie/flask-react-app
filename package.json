@@ -8,7 +8,7 @@
     "clean": "find dist -mindepth 1 -delete || mkdir dist",
     "build": "parcel build src/index.html --no-content-hash --experimental-scope-hoisting",
     "flask": "npm run clean && npm run build && venv/bin/flask run --no-debugger",
-    "deploy": "npm run clean && npm run build && git add ./dist && git commit -m 'Build frontend' && git push heroku master",
+    "deploy": "npm run clean && npm run build && git add ./dist && git commit -m 'Build frontend'; git push heroku master",
     "start": "parcel src/index.html -d .tmp"
   },
   "dependencies": {
