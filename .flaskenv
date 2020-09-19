@@ -1,2 +1,1 @@
-FLASK_APP=api/api.py
-FLASK_ENV=development
+FLASK_APP=wsgi.py
