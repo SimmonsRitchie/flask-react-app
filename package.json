@@ -6,12 +6,10 @@
   "license": "MIT",
   "scripts": {
     "build": "parcel build src/index.html --no-content-hash",
-    "build:prod": "parcel build src/index.html --public-url https://interactives.data.spotlightpa.org/2020/flask-react/",
-    "start-api": "venv/bin/flask run --no-debugger",
-    "clean": "find dist -mindepth 1 -delete || mkdir dist",
-    "deploy": "npm run clean && npm run build:prod && s3deploy -source dist -bucket interactives.data.spotlightpa.org -path 2020/flask-react/ -region us-east-2  -distribution-id EFR0HZ7VA3Q92 -public-access",
-    "start": "parcel src/index.html",
-    "heroku-postbuild": "npm run build"
+    "run-flask": "npm run build && venv/bin/flask run --no-debugger",
+    "dev-flask": "npm run start & venv/bin/flask run",
+    "deploy": "npm run build && git push heroku master",
+    "start": "parcel src/index.html -d .tmp"
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
