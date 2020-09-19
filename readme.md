@@ -20,7 +20,7 @@ Now enter the following command:
 
 ### Run frontend
 
-To spin up Parcel's dev server for the React frontend, enter:
+To spin up Parcel's dev server with your React frontend, enter:
 
 ```npm run start```
 
@@ -32,7 +32,8 @@ It's preferable to develop using Parcel's dev server, rather than Flask's, becau
 
 To spin up a local Flask server with the latest build of your frontend, enter:
 
-```npm run run-flask```
+```npm run flask```
+
 
 ### Deploy to Heroku
 
