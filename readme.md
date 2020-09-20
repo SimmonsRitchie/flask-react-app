@@ -1,20 +1,42 @@
-### Boilerplate React-Flask app
-A dead simple React-Flask app that's easy to deploy to Heroku. Clone this repo and modify it for your own use.
+### Flask-React Boilerplate App
+A dead simple Flask-React app that's easy to deploy to Heroku. Clone this repo and modify it for your own use.
 
-[Parcel.js](https://github.com/parcel-bundler/parcel) is used to bundle the JS.
+I built this boilerplate because I could find only limited advice on the web on creating a Flask app with a React frontend that could be deployed to Heroku.
 
-View: [live project on Heroku](https://dsr-flask-react-app.herokuapp.com//)
+The project includes ESLint and the Bulma CSS framework. [Parcel.js](https://github.com/parcel-bundler/parcel) is used to bundle the JS.
+
+View [live project on Heroku](https://dsr-flask-react-app.herokuapp.com/).
 
 Inspired by:
+- Miguel Grinberg's 'How to Deploy a React + Flask Project' [part 1](https://blog.miguelgrinberg.com/post/how-to-create-a-react--flask-project) and [part 2](https://blog.miguelgrinberg.com/post/how-to-deploy-a-react--flask-project) tutorial.
 - Anindita Basu's [flask-heroku-start-pack](https://github.com/AninditaBasu/flask-heroku-starter-pack) and [tutorial](https://dev.to/aninditabasu/how-to-move-your-flask-app-from-the-local-machine-to-the-heroku-cloud-egk).
-- Miguel Grinberg's ['How to Deploy a React + Flask Project'](https://blog.miguelgrinberg.com/post/how-to-deploy-a-react--flask-project) tutorial.
 - Ayushman Kumar's ['Deploy Python Flask App on Heroku'](https://www.geeksforgeeks.org/deploy-python-flask-app-on-heroku/) tutorial
 
+
+### Requirements
+- Python v3.8+
+- Node v6+
 
 ### Install
 To install, clone this repo and cd into the root of the project.
 
-Now enter the following command:
+1) Create a virtual environment:
+
+```python3 -m venv venv```
+
+2) Activate the virtual environment. If you're using a Unix-based OS, run:
+
+```source venv/bin/activate```
+
+If you're using Windows, run:
+
+```venv\Scripts\activate```
+
+3) Install the needed python dependencies:
+
+```pip install -r requirements.txt``` 
+
+4) Now enter the following command to install the required Node packages:
 
 ```npm install```
 
@@ -60,6 +82,6 @@ For your initially deployment, run the following commands from inside your proje
 
 ### Deploy to Heroku - Subsequent
 
-For subsequent deployments to Heroku, make sure you're on the master branch then run:
+For subsequent deployments to Heroku, make sure you're on your master branch then run:
 
 ```npm run deploy```
