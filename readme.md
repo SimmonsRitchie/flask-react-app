@@ -8,7 +8,7 @@ The project includes ESLint and the Bulma CSS framework. [Parcel.js](https://git
 View [live project on Heroku](https://dsr-flask-react-app.herokuapp.com/).
 
 Inspired by:
-- Miguel Grinberg's 'How to Deploy a React + Flask Project' [part 1](https://blog.miguelgrinberg.com/post/how-to-create-a-react--flask-project) and [part 2](https://blog.miguelgrinberg.com/post/how-to-deploy-a-react--flask-project) tutorial.
+- Miguel Grinberg's ['How to Create a React + Flask Project'](https://blog.miguelgrinberg.com/post/how-to-create-a-react--flask-project) and ['How to Deploy a React + Flask Project'](https://blog.miguelgrinberg.com/post/how-to-deploy-a-react--flask-project) tutorials.
 - Anindita Basu's [flask-heroku-start-pack](https://github.com/AninditaBasu/flask-heroku-starter-pack) and [tutorial](https://dev.to/aninditabasu/how-to-move-your-flask-app-from-the-local-machine-to-the-heroku-cloud-egk).
 - Ayushman Kumar's ['Deploy Python Flask App on Heroku'](https://www.geeksforgeeks.org/deploy-python-flask-app-on-heroku/) tutorial
 
@@ -42,11 +42,11 @@ If you're using Windows, run:
 
 ### Run
 
-To spin up a local Flask server with the latest build of your frontend, run:
+To spin up a local Flask server with the latest build of the frontend, run:
 
 ```npm run flask:prod```
 
-For development, to spin up a local server with your Flask app and a separate local server with your React app, run:
+For development, you may prefer to spin up a local server with your Flask app and a separate local server with your React app. Run:
 
 ```npm run flask:dev```
 
@@ -60,7 +60,7 @@ To spin up Parcel's dev server with just your React frontend, run:
 
 You should be able to view the project at localhost:1234
 
-Note: It can be preferable to develop using Parcel's dev server, rather than Flask's, because Parcel includes hot reloading by default. However, you will not be able to interact with the server unless you also spin up your Flask app at the same time.
+Note: Keep in mind you will not be able to interact with the server unless you also spin up your Flask app. However, it can sometimes be preferable to develop using Parcel's dev server, rather than Flask's, because Parcel includes hot reloading by default. 
 
 ### Deploy to Heroku - Initial
 
