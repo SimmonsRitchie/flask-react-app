@@ -7,7 +7,9 @@
   "scripts": {
     "clean": "find dist -mindepth 1 -delete || mkdir dist",
     "build": "parcel build client/index.html --no-content-hash --experimental-scope-hoisting",
-    "flask": "npm run clean && npm run build && venv/bin/flask run --no-debugger",
+    "flask": "venv/bin/flask run --no-debugger",
+    "flask:dev": "npm run start & export BUILD_DIR=.tmp && npm run flask",
+    "flask:prod": "npm run clean && npm run build && npm run flask",
     "deploy": "npm run clean && npm run build && git add ./dist && git commit -m 'Build frontend'; git push heroku master",
     "start": "parcel client/index.html -d .tmp"
   },
@@ -27,6 +29,7 @@
     "@babel/preset-react": "^7.10.4",
     "babel-eslint": "^10.1.0",
     "babel-plugin-emotion": "^10.0.33",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",

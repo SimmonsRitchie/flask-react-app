@@ -33,7 +33,7 @@ You should be able to view the project at localhost:1234
 
 To spin up a local Flask server with the latest build of your frontend, enter:
 
-```npm run flask```
+```npm run flask-dev```
 
 Note: If you've already run this command once you may need to do a hard refresh in order to see changes to your frontend since the prior build.
 
@@ -47,11 +47,11 @@ For your initially deployment, run the following commands from inside your proje
 
 ```heroku login```
 
-2) Create a unique name for your project:
+2) Create a new Heroku project with a unique name. Upon execution, Heroku will add the location of this project to git as a new remote repo.
 
 ```heroku create flask-react-app```
 
-3) The previous command will automatically set up Heroku as a remote repo for your project. Now push your code to Heroku:
+3) Now push your code to Heroku:
 
 ```git push heroku master```
 
