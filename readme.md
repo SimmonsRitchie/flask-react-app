@@ -18,24 +18,27 @@ Now enter the following command:
 
 ```npm install```
 
-### Run frontend
+### Run
 
-It's preferable to develop using Parcel's dev server, rather than Flask's, because Parcel includes hot reloading by default.
+To spin up a local Flask server with the latest build of your frontend, run:
 
-To spin up Parcel's dev server with your React frontend, enter:
+```npm run flask:prod```
+
+For development, to spin up a local server with your Flask app and a separate local server with your React app, run:
+
+```npm run flask:dev```
+
+Note: You may need to hard refresh your browser as you develop in order to see changes to your frontend.
+
+### Run just frontend
+
+To spin up Parcel's dev server with just your React frontend, run:
 
 ```npm run start```
 
 You should be able to view the project at localhost:1234
 
-
-### Run flask
-
-To spin up a local Flask server with the latest build of your frontend, enter:
-
-```npm run flask-dev```
-
-Note: If you've already run this command once you may need to do a hard refresh in order to see changes to your frontend since the prior build.
+Note: It can be preferable to develop using Parcel's dev server, rather than Flask's, because Parcel includes hot reloading by default. However, you will not be able to interact with the server unless you also spin up your Flask app at the same time.
 
 ### Deploy to Heroku - Initial
 
@@ -49,7 +52,7 @@ For your initially deployment, run the following commands from inside your proje
 
 2) Create a new Heroku project with a unique name. Upon execution, Heroku will add the location of this project to git as a new remote repo.
 
-```heroku create flask-react-app```
+```heroku create dsr-flask-react-app```
 
 3) Now push your code to Heroku:
 
