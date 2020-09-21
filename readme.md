@@ -50,6 +50,8 @@ For development, you may prefer to spin up a local server with your Flask app an
 
 ```npm run flask:dev```
 
+In either case, you should be able to view the app at 127.0.0.1:5000
+
 Note: You may need to hard refresh your browser as you develop in order to see changes to your frontend.
 
 ### Run just frontend
